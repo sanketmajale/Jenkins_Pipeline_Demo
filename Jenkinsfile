@@ -17,16 +17,12 @@ pipeline {
         stage ('Testing Stage') {
 
             steps {
-                withMaven(maven : 'M3') {
                     sh 'mvn test'
-                }
             }
         }
         stage ('Install Stage') {
             steps {
-                withMaven(maven : 'M3') {
                     sh 'mvn install'
-                }
             }
         }
     }
