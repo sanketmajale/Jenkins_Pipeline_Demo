@@ -23,7 +23,8 @@ pipeline {
         }
         stage ('Install Stage') {
             steps {
-                    sh 'mvn install'
+                    echo 'Done'
+                    //sh 'mvn install'
             }
         }
     }
