@@ -4,7 +4,6 @@ pipeline {
     }
     stages {
         stage ('Testing Stage') {
-
             steps {
                      echo 'Test done'
                    // sh 'mvn test'
